@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-o", "${fileBasenameNoExtension}",
+                "${file}",
+                "-lglu32", "-lopengl32", "-lfreeglut", "-lm"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Task for building C file using GCC"
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "${workspaceFolder}/${fileBasenameNoExtension}",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "dependsOn": "build",
+            "problemMatcher": []
+        }
+    ]
+}
