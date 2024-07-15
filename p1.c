@@ -54,7 +54,7 @@ int main(int argc, char **argv) {
     scanf("%d%d", &X2, &Y2);
 
     glutInit(&argc, argv);
-    glutInitDispl1ayMode(GLUT_SINGLE | GLUT_RGB);
+    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
     glutInitWindowSize(300, 400);
     glutInitWindowPosition(0, 0);
     glutCreateWindow("Line Bresenham");
