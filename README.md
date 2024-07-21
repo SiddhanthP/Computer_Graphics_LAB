@@ -13,4 +13,4 @@ right and left.
 filtering techniques.
 10. Write a program to blur and smoothing an image.
 11. Write a program to contour an image.
-12. Write a program to detect a face/s in an image. formate propely for github read me
+12. Write a program to detect a face/s in an image.
